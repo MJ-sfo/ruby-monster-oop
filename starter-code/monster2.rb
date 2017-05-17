@@ -1,6 +1,6 @@
 class Monster2
   attr_accessor :threat_level
-  def initialize(threat_level)
+  def initialize(threat_level=:medium)
   	@threat_level = threat_level
   end
 
@@ -40,3 +40,5 @@ puts rob.threat_level
 rob.name = "Rob Zombie"
 puts rob.name
 # "Rob Zombie"
+
+#  ??? if zombie inherits from monsters2, why need to initialize threat_leve again ??
